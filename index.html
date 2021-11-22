@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>8-bit Todo List</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="nes-container is-rounded with-title" id="container-todo">
+        <p class="title">8-bit Todo List</p>
+        <p>
+          <button class="nes-btn is-primary" onclick="renderListToDo()">ToDo</button>
+          <button class="nes-btn is-success" onclick="renderListCompleted()">Completed</button>
+        </p>
+
+        <div id="container-add-task">
+          <input
+            type="text"
+            id="todo-input"
+            class="nes-input"
+            placeholder="Add a new task"
+          />
+          &nbsp;    
+          <button class="nes-btn" onclick="addItem()">+</button>
+      </div>
+
+      <div class="list" id="list">
+      </div>
+    </div>
+  </body>
+  <script src="./todoList.js"></script>
+</html>
